@@ -4,9 +4,11 @@ function useMethods(str) {
     var mySplit = myStr.split("");
     var myreverse = mySplit.reverse();
     var myReverse = myreverse.join('');
-    return myReverse;
-    var countCharacters = myStr.map();
-    return countCharacters;
+    var countCharacters = myReverse.split(" ").map(i => i.length);
+    return {
+        myReverse,
+        countCharacters
+    };
 }
 console.log(useMethods());
 // Only change code above this code
