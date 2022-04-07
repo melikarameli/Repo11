@@ -3,10 +3,13 @@ var myPetsArray = ["Dog", "Cat"];
 // End of myPetsArray array
 // Create a function below this line
 function myArrayFunction(myPets) {
-    var myNewPets = myPetsArray.push("Bird", "Fish");
-    var firstPet = myNewPets.unshift();
-    var lastPet = myNewPets.pop();
+    var myNewPets = myPetsArray
+    myNewPets.push("Bird", "Fish");
+    var firstPet = myNewPets[0];
+    var lastPet = myNewPets[3];
+    myNewPets.shift();
     myNewPets.unshift("Lion");
+    myNewPets.pop();
     return myNewPets;
 }
 console.log(myArrayFunction());
